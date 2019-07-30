@@ -13,6 +13,10 @@ class Song
     artist.add_song(self) unless artist.songs.include?(self)
   end
   
+  def save
+    @@all << self
+  end
+  
   def self.all
     @@all
   end
