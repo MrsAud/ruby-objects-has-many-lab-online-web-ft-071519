@@ -11,7 +11,7 @@ class Post
   
   def author=(author)
     @author = author
-    
+    Author.add_post(self)
   
   def save
     @@all << self
