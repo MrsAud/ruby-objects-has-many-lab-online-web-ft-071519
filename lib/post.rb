@@ -14,6 +14,10 @@ class Post
     author.add_post(self) unless author.posts.include?(self)
   end
   
+  def author_name
+    @author
+  end
+  
   def save
     @@all << self
   end
