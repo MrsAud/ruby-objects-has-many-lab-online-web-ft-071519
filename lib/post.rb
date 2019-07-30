@@ -10,6 +10,7 @@ class Post
   end
   
   def author=(author)
+    @author = author
   
   def save
     @@all << self
