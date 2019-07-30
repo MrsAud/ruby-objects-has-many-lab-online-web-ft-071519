@@ -14,6 +14,10 @@ class Song
     artist.add_song(self) unless artist.songs.include?(self)
   end
   
+  def artist_name
+    @artist.name unless @artist == nil
+  end
+  
   def save
     @@all << self
   end
