@@ -20,7 +20,6 @@ class Artist
   
   def self.song_count
     song_array = []
-    self.each do | @songs| 
     song_array.length
   end
   
