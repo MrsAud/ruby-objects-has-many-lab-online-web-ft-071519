@@ -11,7 +11,7 @@ class Post
   
   def author=(author)
     @author = author
-    Author.add_post(self) unless Author.posts.include?(self)
+    author.add_post(self) unless author.posts.include?(self)
   
   def save
     @@all << self
