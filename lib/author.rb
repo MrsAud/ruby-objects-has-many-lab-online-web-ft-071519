@@ -17,5 +17,9 @@ class Author
     @posts << post
     post.author = self unless post.author == self
   end
+  
+  def post_count
+    Post.all.length
+  end
 
 end
