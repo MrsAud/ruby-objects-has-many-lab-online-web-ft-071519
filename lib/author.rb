@@ -14,6 +14,8 @@ class Author
   
   def add_post_by_title(title)
     post = post.new(title)
+    @posts << post
+    post.author = self unless post.author == self
   end
 
 end
